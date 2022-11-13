@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: green;
+        }
+        .container{
+            background-color: rgb(209, 209, 209);
+        }
+        input {
+            padding: 20px;
+        }
+        select{
+            padding: 20px;
+            padding-left: 55px;
+            padding-right: 55px;
+        }
+       </style>
+       
+
+</head>
+<body>
+<div class="container">
+    <h1>Validation D'Un Formulaire</h1>
+    <hr>
+    <div class="form">
+      <form action="" align='center'>
+        <input type="nom"  name="nom"  id="nom" placeholder="entrez le nom" onkeyup="ValiderNom()"> <br> <br>
+
+        <input type="prenom"  name="prenom"  id="prenom" placeholder="entrez le prenom" onkeyup="ValiderPrenom()"><br> <br>
+
+        <input type="text"  name="Cin"  id="Cin" placeholder="entrez le Cin" onkeyup="ValiderCin()"> <br> <br>
+
+        <select name="Ville" id="Ville" onchange="Select()" >
+           <option value="-1" >select ville</option>
+            <option value="1" > Casablanca</option>
+            <option value="2"> Rabat</option>
+            <option  value="3"> Saleé</option>
+            <option value="4" > Marackech</option>
+        </select> <br><br>
+
+        <input type="text"  name="CodePostal"  id="CodePostal" placeholder="entrez le CodePostal" onkeyup="ValiderCodePostal()"> <br> <br>
+
+        <input type="email"  name="email"  id="email" placeholder="entrez le email" onkeyup="Valideremail()"> <br> <br>
+
+        <input type="password"  name="Password"  id="Password" placeholder="entrez le Password" onkeyup="ValiderPassword()"> <br> <br>
+
+        <input type="password"  name="ConPassword"  id="ConPassword" placeholder="entrez le ConPassword" onkeyup="ValiderConPassword()"> <br> <br>
+
+
+        
+      </form>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
